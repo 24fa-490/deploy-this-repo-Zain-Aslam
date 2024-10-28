@@ -1,13 +1,8 @@
-import { Pool } from 'pg';
-import dotenv from 'dotenv';
+import postgres from 'postgres'
 
-dotenv.config(); // Load environment variables
+// see env variables in .env
+import {PGCONNECT} from '$env/static/private';
 
-const pool = new Pool({
-  connectionString: process.env.PGCONNECT,
-  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false, // for production
-});
+const sql = postgres(PGCONNECT, {} )
 
-export default {
-  query: (text, params) => pool.query(text, params),
-};
+export default sql;
