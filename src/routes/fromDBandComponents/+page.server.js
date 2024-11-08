@@ -13,5 +13,5 @@ export async function load() {
 
     console.log({rows});
 
-    return { containers: rows };
+    return { container: rows };
 }
