@@ -26,6 +26,6 @@
 
 # Where am I deployed?
 
-<[Deployed Link](https://deploy-this-repo-zain-aslam-cooz-mg3ymav7a-zain-aslams-projects.vercel.app)>
+<[Deployed Link](deploy-this-repo-zain-aslam-cooz.vercel.app)>
 
 
